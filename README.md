@@ -4,7 +4,7 @@
 #### Vadītāju grafiku digitalizēšana:
 
 #### 1. Vadītāja darba grafiks:
-```http
+```
   GET: /api/driver-schedules/{driverId}
 ```
 
@@ -14,7 +14,7 @@
 
 #### 2. Izsūtīt SMS paziņojumus:
 
-```http
+```
   Post: /api/driver-schedules/{driverId}
 ```
 
@@ -24,7 +24,7 @@
 
 #### 3. Izsekot grafika parasktiem:
 
-```http
+```
   GET: /api/track-signatures/{month}
 ```
 
@@ -34,7 +34,7 @@
 
 #### 4. Izveidot parakstīšanas termiņus:
 
-```http
+```
   POST: /api/set-signing-deadlines
 ```
 
