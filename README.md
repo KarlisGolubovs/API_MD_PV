@@ -1,3 +1,13 @@
+
+# API darbības apraksts
+ 
+#### Vadītāju grafiku digitalizēšana:
+
+#### 1. Vadītāja darba grafiks:
+```http
+  GET: /api/driver-schedules/{driverId}
+```
+
 | Parametrs | Metode     | Apraksts                |
 | :-------- | :------- | :------------------------- |
 | `driverId` | `GET` | Iegūt konkrēta vadītāja darba grafiku, iekļaujot detaļas par katru mēneša dienu. |
