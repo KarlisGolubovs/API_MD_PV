@@ -123,5 +123,5 @@ Atjaunināta JSON atbilde:
 }
 
 #### API darbības shematisks attēlojums : 
-(./API_MD_PV/PV_majas_darbs_API_Karlis_Golubovs.drawio.png)
+![API Diagram](./API_MD_PV/PV_majas_darbs_API_Karlis_Golubovs.drawio.png)
 
