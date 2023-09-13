@@ -42,7 +42,10 @@
 | :-------- | :------- | :------------------------- |
 | `date` | `POST` | Tiek nostatīts grafika parakstīšanas termiņš. API pieņem POST pieprasījumu ar datiem, kuros norādīts : mēnesis, vadītāja identifikātors un parakstīšanas termiņš.
 
-#### 5. Atjaunināta JSON atbildes struktūra:
+#### 5. API darbības shematisks attēlojums : 
+![API Diagram](./API_MD_PV/PV_majas_darbs_API_Karlis_Golubovs.drawio.png)
+
+#### 6. Atjaunināta JSON atbildes struktūra:
 
    - Dienas tips: API atbilde tagad iekļauj papildu lauku, kas norāda katras dienas veidu (piemēram, darbdiena, sestdiena, svētdiena vai svētku diena).
    - Tūres detaļas: Detalizēta informācija par tūrēm tiek sniegta, iekļaujot tūres numuru, traucējumu veidu (piemēram, elektrisks, dīzeļs), sākuma un beigu laiku, atpūtas informāciju (ja piemērojams) un jebkādas papildu piezīmes.
@@ -121,7 +124,4 @@ Atjaunināta JSON atbilde:
     },
     "additionalNotes": "Keep track of daily updates due to ongoing track work."
 }
-```
-#### API darbības shematisks attēlojums : 
-![API Diagram](./API_MD_PV/PV_majas_darbs_API_Karlis_Golubovs.drawio.png)
 
