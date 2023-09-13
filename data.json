@@ -1,0 +1,65 @@
+{
+    "driverId": "12345",
+    "month": "September",
+    "year": "2023",
+    "monthlyWorkNorms": "160 hours",
+    "totalPlannedHours": "150 hours",
+    "schedule": [
+        {
+            "date": "1",
+            "dayType": "weekday",
+            "shift": "morning",
+            "tourDetails": {
+                "tourNumber": "T101",
+                "tractionType": "electric",
+                "startTime": "06:00",
+                "endTime": "14:00",
+                "restInformation": "Lunch break from 12:00 to 12:30",
+                "notes": "Special event in the city. Expect delays."
+            }
+        },
+        {
+            "date": "2",
+            "dayType": "Saturday",
+            "shift": "night",
+            "tourDetails": {
+                "tourNumber": "T102",
+                "tractionType": "diesel",
+                "startTime": "20:00",
+                "endTime": "04:00",
+                "restInformation": "No scheduled breaks",
+                "notes": "Track maintenance on route 5."
+            },
+            "shiftAssignmentForManoeuvreDrivers": "X"
+        },
+        {
+            "date": "30",
+            "dayType": "Sunday",
+            "shift": "afternoon",
+            "tourDetails": {
+                "tourNumber": "T130",
+                "tractionType": "electric",
+                "startTime": "12:00",
+                "endTime": "20:00",
+                "restInformation": "Lunch break from 15:00 to 15:30",
+                "notes": "Standard route."
+            }
+        }
+    ],
+    "notifications": [
+        {
+            "date": "1",
+            "message": "Your schedule for September 2023 is now available."
+        },
+        {
+            "date": "15",
+            "message": "Please sign your September schedule by the deadline."
+        }
+    ],
+    "controlAndTracking": {
+        "signatureStatus": "Pending",
+        "signedDate": null,
+        "deadlineForSigning": "10"
+    },
+    "additionalNotes": "Keep track of daily updates due to ongoing track work."
+}
