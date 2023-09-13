@@ -32,7 +32,7 @@
 | :-------- | :------- | :------------------------- |
 | `month` | `GET` |Sekot vadītāju darba grafika parakstu statusam konkrētā mēnesī. Sniedz sarakstu ar vadītājiem, kuri vēl nav parakstījuši savus grafikus. |
 
-#### 4. Endpoint for Setting Signing Deadlines:
+#### 4. Izveidot parakstīšanas termiņus:
 
 ```http
   POST: /api/set-signing-deadlines
@@ -40,7 +40,7 @@
 
 | Parametrs | Metode     | Apraksts                |
 | :-------- | :------- | :------------------------- |
-| `date` | `POST` | QA personnel set signing deadlines.The API accepts POST requests with data specifying the month, driver identifier, and the new signing deadline. |
+| `date` | `POST` | Tiek nostatīts grafika parakstīšanas termiņš. API pieņem POST pieprasījumu ar datiem, kuros norādīts : mēnesis, vadītāja identifikātors un parakstīšanas termiņš.
 
 #### 5. Atjaunināta JSON atbildes struktūra:
 
@@ -54,6 +54,74 @@
    - Kļūdu apstrādes informācija: API nosaka, kā tiek apstrādātas kļūdas saistībā ar grafiku piegādi vai apstiprināšanu, sniedzot skaidras kļūdu ziņas un statusa kodus.
 
 Atjaunināta JSON atbilde: 
+
+```JSON
+{
+    "driverId": "12345",
+    "month": "September",
+    "year": "2023",
+    "monthlyWorkNorms": "160 hours",
+    "totalPlannedHours": "150 hours",
+    "schedule": [
+        {
+            "date": "1",
+            "dayType": "weekday",
+            "shift": "morning",
+            "tourDetails": {
+                "tourNumber": "T101",
+                "tractionType": "electric",
+                "startTime": "06:00",
+                "endTime": "14:00",
+                "restInformation": "Lunch break from 12:00 to 12:30",
+                "notes": "Special event in the city. Expect delays."
+            }
+        },
+        {
+            "date": "2",
+            "dayType": "Saturday",
+            "shift": "night",
+            "tourDetails": {
+                "tourNumber": "T102",
+                "tractionType": "diesel",
+                "startTime": "20:00",
+                "endTime": "04:00",
+                "restInformation": "No scheduled breaks",
+                "notes": "Track maintenance on route 5."
+            },
+            "shiftAssignmentForManoeuvreDrivers": "X"
+        },
+        {
+            "date": "30",
+            "dayType": "Sunday",
+            "shift": "afternoon",
+            "tourDetails": {
+                "tourNumber": "T130",
+                "tractionType": "electric",
+                "startTime": "12:00",
+                "endTime": "20:00",
+                "restInformation": "Lunch break from 15:00 to 15:30",
+                "notes": "Standard route."
+            }
+        }
+    ],
+    "notifications": [
+        {
+            "date": "1",
+            "message": "Your schedule for September 2023 is now available."
+        },
+        {
+            "date": "15",
+            "message": "Please sign your September schedule by the deadline."
+        }
+    ],
+    "controlAndTracking": {
+        "signatureStatus": "Pending",
+        "signedDate": null,
+        "deadlineForSigning": "10"
+    },
+    "additionalNotes": "Keep track of daily updates due to ongoing track work."
+}
+
 
 
 
