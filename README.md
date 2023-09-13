@@ -122,4 +122,6 @@ Atjaunināta JSON atbilde:
     "additionalNotes": "Keep track of daily updates due to ongoing track work."
 }
 
+#### API darbības shematisks attēlojums : 
+(./API_MD_PV/PV_majas_darbs_API_Karlis_Golubovs.drawio.png)
 
