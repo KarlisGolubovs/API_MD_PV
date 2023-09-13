@@ -43,7 +43,7 @@
 | `date` | `POST` | Tiek nostatīts grafika parakstīšanas termiņš. API pieņem POST pieprasījumu ar datiem, kuros norādīts : mēnesis, vadītāja identifikātors un parakstīšanas termiņš.
 
 #### 5. API darbības shematisks attēlojums : 
-![API Diagram](./API_MD_PV/PV_majas_darbs_API_Karlis_Golubovs.drawio.png)
+![alt text](./API_MD_PV/PV_majas_darbs_API_Karlis_Golubovs.drawio.png)
 
 #### 6. Atjaunināta JSON atbildes struktūra:
 
