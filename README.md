@@ -123,6 +123,3 @@ Atjaunināta JSON atbilde:
 }
 
 
-
-
-
