@@ -48,11 +48,11 @@
 #### 6. Atjaunināta JSON atbildes struktūra:
 
    - Dienas tips: API atbilde tagad iekļauj papildu lauku, kas norāda katras dienas veidu (piemēram, darbdiena, sestdiena, svētdiena vai svētku diena).
-   - Tūres detaļas: Detalizēta informācija par tūrēm tiek sniegta, iekļaujot tūres numuru, vilciena veidu (piemēram, elektrisks, dīzeļs), sākuma un beigu laiku, atpūtas informāciju (ja piemērojams) un jebkādas papildu piezīmes.
+   - Tūres detaļas: Detalizēta informācija par tūrēm tiek sniegta, iekļaujot tūres numuru, vilciena veidu (piemēram, elektrisks, dīzeļa), sākuma un beigu laiku, atpūtas informāciju (ja piemērojams) un jebkādas papildu piezīmes.
    - Maiņu piešķiršana manevru vadītājiem: Manevru vadītājiem API atbilde iekļauj diennakts maiņu piešķiršanas apzīmējumus (piemēram, X, O).
    - Mēneša darba normas un kopējais darba stundu skaits: Katram vadītājam tiek parādītas mēneša stundu normas un kopējais plānoto darba stundu skaits kalendāra mēnesī.
    - Paziņojumi: API tagad ievieš SMS paziņojumus, lai informētu vadītājus, kad ir pieejami jauni vai atjaunoti darba grafiki.
-   - Kontroles un sekotāju informācija: Ir izveidotas mehānismi, kas seko, vai vadītāji ir parakstījuši savus grafikus, un var izgūt sarakstus ar tiem vadītājiem, kuri vēl nav parakstījuši grafikus.
+   - Kontroles un sekotāju informācija: Ir izveidoti mehānismi, kas seko, vai vadītāji ir parakstījuši savus grafikus, un var izgūt sarakstus ar tiem vadītājiem, kuri vēl nav parakstījuši grafikus.
    - Papildu piezīmes vai skaidrojumi: API ļauj iekļaut skaidrojošas piezīmes vai papildu informāciju, lai sniegtu kontekstu vai skaidrojumus.
    - Kļūdu apstrādes informācija: API nosaka, kā tiek apstrādātas kļūdas saistībā ar grafiku piegādi vai apstiprināšanu, sniedzot skaidras kļūdu ziņas un statusa kodus.
 
